@@ -80,7 +80,7 @@ if (SUBSAMPLE_ORIGINAL_STRAINS):
                             size = int(0.01 * x_train.shape[0]))
 
 # Create the ML_Model 
-ML_model = createNN(ML_MODEL_IS_3x3, 7)
+ML_model = createNN(ML_MODEL_IS_3X3, 7)
 compileNN(ML_model, False)       
 history = ML_model.fit(x_train_normalised[idx, np.newaxis, :], 
                y_train_normalised[idx, np.newaxis, :], 
