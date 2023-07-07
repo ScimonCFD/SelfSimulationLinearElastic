@@ -55,7 +55,7 @@ SEED = 2
 
 RANDOM_STRAINS = False
 SUBSAMPLE_ORIGINAL_STRAINS = True
-includeValidationSetWhenTraining = True
+INCLUDE_VALIDATION_SET_WHEN_TRAINING = True
 
 # Material properties
 E = 100e9 #Young's modulus
@@ -63,4 +63,4 @@ v = 0.1 #Poisson's ratio
 LAME_1 = E * v / ((1 + v) * (1 - 2 *v))
 LAME_2 = E / (2 * (1 + v))
 plots_path = './Plots'
-number_of_epochs = 3000
+NUMBER_OF_EPOCHS = 3000
