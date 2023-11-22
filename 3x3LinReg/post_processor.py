@@ -128,7 +128,7 @@ for j in range(6):
                  + ". Base model. Epsilon_" + component[j], fontsize=20)
     plt.legend()
     fig.savefig(master_folder_NN + "Plots/" + "Epsilon_" + component[j] 
-                + "_BaseModel.png")
+                + "_BaseModel.png", bbox_inches='tight')
     plt.close(fig)
     for i in range(TOTAL_NUMBER_PASSES):
         fig = plt.figure(figsize=(15, 10))
@@ -145,7 +145,7 @@ for j in range(6):
                      + component[j], fontsize=20)
         plt.legend()
         fig.savefig(master_folder_NN + "Plots/" + "Epsilon_" + component[j] + 
-                    "_Iter" + str(i+1) + ".png")
+                    "_Iter" + str(i+1) + ".png", bbox_inches='tight')
         plt.close(fig)
 
 for j in range(6):
@@ -162,7 +162,7 @@ for j in range(6):
                  + ". Base model. Sigma_" + component[j], fontsize=20)
     plt.legend()
     fig.savefig(master_folder_NN + "Plots/" + "Sigma_" + component[j] 
-                + "_BaseModel.png")    
+                + "_BaseModel.png", bbox_inches='tight')    
     plt.close(fig)
     for i in range(TOTAL_NUMBER_PASSES):
         fig = plt.figure(figsize=(15, 10))
@@ -179,7 +179,7 @@ for j in range(6):
                      + component[j], fontsize=20)
         plt.legend()
         fig.savefig(master_folder_NN + "Plots/" + "Sigma_" + component[j] 
-                    + "_Iter" + str(i+1) + ".png")
+                    + "_Iter" + str(i+1) + ".png", bbox_inches='tight')
         plt.close(fig)
 
 
@@ -203,7 +203,7 @@ for j in range(3):
                  + ". Base model. D_" + component[j], fontsize=20)
     plt.legend()
     fig.savefig(master_folder_NN + "Plots/" + "D_" + component[j] 
-                + "_BaseModel.png")    
+                + "_BaseModel.png", bbox_inches='tight')    
     plt.close(fig)
     for i in range(TOTAL_NUMBER_PASSES):
         fig = plt.figure(figsize=(15, 10))
@@ -220,5 +220,5 @@ for j in range(3):
                      fontsize=20)
         plt.legend()
         fig.savefig(master_folder_NN + "Plots/" + "D_" + component[j] 
-                    + "_Iter" + str(i+1) + ".png")
+                    + "_Iter" + str(i+1) + ".png", bbox_inches='tight')
         plt.close(fig)
