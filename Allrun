@@ -29,11 +29,7 @@ then
 fi
 
 # Run the cases
-(cd 3x3LinReg && python selfsim_linear_elastic.py)
-(cd 3x3LinReg && python post_processor.py)
-(cd 3x3NN && python selfsim_linear_elastic.py)
-(cd 3x3NN && python post_processor.py)
-(cd 6x6LinReg && python selfsim_linear_elastic.py)
-(cd 6x6LinReg && python post_processor.py)
-(cd 6x6NN && python selfsim_linear_elastic.py)
-(cd 6x6NN && python post_processor.py)
+(cd 3x3LinReg && python selfsim_linear_elastic.py && python post_processor.py &)
+(cd 3x3NN && python selfsim_linear_elastic.py && python post_processor.py &)
+(cd 6x6LinReg && python selfsim_linear_elastic.py && python post_processor.py &)
+(cd 6x6NN && python selfsim_linear_elastic.py && python post_processor.py &)
