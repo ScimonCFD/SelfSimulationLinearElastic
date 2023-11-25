@@ -158,8 +158,8 @@ for j in range(6):
                       label = "Calculated", marker='x')
     plt.plot(sigma_Expected_List[0][:,j], sigma_Expected_List[0][:,j], 
               color = "blue", label = "Ideal")
-    plt.xlabel(r'Expected stress $(10^5 \; m/m)$')
-    plt.ylabel(r'Calculated stress $(10^5 \; m/m)$')
+    plt.xlabel(r'Expected stress $(Pa)$')
+    plt.ylabel(r'Calculated stress $(Pa)$')
     # fig.suptitle("Load increment "+ str(LOAD_INC_INTEREST) 
     #               + ". Base model. Sigma_" + component[j], fontsize=20)
     # plt.legend()
@@ -172,8 +172,8 @@ for j in range(6):
                     color = "red", label = "Calculated", marker='x')
         plt.plot(sigma_Expected_List[i][:,j], sigma_Expected_List[0][:,j], 
                   color = "blue", label = "Ideal")
-        plt.xlabel(r'Expected stress $(m/m)$')
-        plt.ylabel(r'Calculated stress $(m/m)$')
+        plt.xlabel(r'Expected stress $(Pa)$')
+        plt.ylabel(r'Calculated stress $(Pa)$')
         # fig.suptitle("Load increment "+ str(LOAD_INC_INTEREST) 
         #               + ". Pass number " + str(i+1) + ". Sigma_" 
         #               + component[j], fontsize=20)
