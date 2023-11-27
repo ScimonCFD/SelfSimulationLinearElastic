@@ -33,4 +33,4 @@ def serialise_fields():
     np.save(str(int(time))+'/sigma', sigma)   
     np.save(str(int(time))+'/DExpected', DExpected) 
     np.save(str(int(time))+'/sigmaExpected', sigmaExpected)   
-    np.save(str(int(time))+'/D', D)   
+    np.save(str(int(time))+'/D', D)

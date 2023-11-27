@@ -38,4 +38,3 @@ def predict():
     sigma[:, 0] = new_sigma[:, 0]
     sigma[:, 1] = new_sigma[:, 1]
     sigma[:, 3] = new_sigma[:, 2]
-    ##########################################################
