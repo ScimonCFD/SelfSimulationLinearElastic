@@ -25,7 +25,6 @@ from sklearn.linear_model import LinearRegression
 def create_linear_reg(x_train, y_train):
     lin_reg = LinearRegression()
     lin_reg.fit(x_train, y_train)
-    
     return lin_reg
 
         
