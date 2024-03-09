@@ -22,6 +22,7 @@
 
 import os
 
+# Routes to the folders
 ROUTE_THEORETICAL_MODEL = "./Theoretical/solids4foamPlateHole/"
 ROUTE_NN_MODEL = "./NNBased/pythonNNBasePlateHole/"
 ROUTE_TO_NEURAL_NETWORK_CODE = "./neuralNetworks/"
@@ -38,15 +39,21 @@ current_env["PYBIND11_INC_DIR"] = PYBIND11_INC_DIR
 current_env["PYBIND11_LIB_DIR"] = PYBIND11_LIB_DIR
 current_env["SOLIDS4FOAM_INST_DIR"] = SOLIDS4FOAM_INST_DIR
 
-TOL_LOCAL_ITER = 1e-9 
-ML_MODEL_IS_3x3 = False
-TOTAL_ITERATIONS = 4 #Max local iterations 
+# Set several constants up
+TOL_LOCAL_ITER = 1e-9
+ML_MODEL_IS_3X3 = False
+FULL_AUTOPROGRESSIVE = False
+
+TOTAL_ITERATIONS = 5 #Max local iterations
 TOTAL_LOAD_INCREMENTS = 15
 TOTAL_NUMBER_PASSES = 10
-SETS_IN_MOVING_WINDOW = 30
-NUMBER_OF_EPOCHS_OUTERLOOP = 80
+SETS_IN_MOVING_WINDOW = 15
+
+
+NUMBER_OF_EPOCHS_OUTERLOOP = 100
 SEED = 2
 
+RANDOM_STRAINS = False
 SUBSAMPLE_ORIGINAL_STRAINS = True
 INCLUDE_VALIDATION_SET_WHEN_TRAINING = True
 
@@ -55,5 +62,5 @@ E = 100e9 #Young's modulus
 v = 0.1 #Poisson's ratio
 LAME_1 = E * v / ((1 + v) * (1 - 2 *v))
 LAME_2 = E / (2 * (1 + v))
-PLOTS_PATH = './Plots'
+plots_path = './Plots'
 NUMBER_OF_EPOCHS = 3000

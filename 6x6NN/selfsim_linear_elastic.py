@@ -56,7 +56,7 @@ np.random.seed(SEED)
 tf.random.set_seed(SEED)
 
 # Assemble the data set with the expected data
-for load_inc in range(1, TOTAL_LOAD_INCREMENTS):
+for load_inc in range(1, TOTAL_LOAD_INCREMENTS + 1):
     if(load_inc == 1):
         original_x_training_set = deserialise(ROUTE_THEORETICAL_MODEL + 
                                               str(int(load_inc)) + 

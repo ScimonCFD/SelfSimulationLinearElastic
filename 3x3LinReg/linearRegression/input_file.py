@@ -44,7 +44,7 @@ TOL_LOCAL_ITER = 1e-9
 TOTAL_ITERATIONS = 5 #Max local iterations 
 TOTAL_LOAD_INCREMENTS = 15
 TOTAL_NUMBER_PASSES = 10
-SETS_IN_MOVING_WINDOW = 30
+SETS_IN_MOVING_WINDOW = 15
 SEED = 2
 
 # The strains in the training set will be a subset from the strains in the
