@@ -34,7 +34,7 @@ terminal("cp -r " + ROUTE_NN_MODEL + "loadpass* " + ROUTE_NN_MODEL +
          "Results/")
 master_folder_NN = ROUTE_NN_MODEL + "Results/"
 
-LOAD_INC_INTEREST = 1 #9
+LOAD_INC_INTEREST = 15 #9
 TOTAL_LOAD_INCREMENTS = 15
 TOTAL_NUMBER_PASSES = 10
 DELTA_PASSES = 1
