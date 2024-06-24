@@ -36,6 +36,10 @@ from sklearn import linear_model
 from sklearn.linear_model import LinearRegression
 from joblib import load
 from distutils.dir_util import mkpath
+import time
+
+# record start time
+start = time.time()
 
 # Create a folder to plot the results
 mkpath(ROUTE_NN_MODEL + "Results/")
@@ -391,4 +395,10 @@ for pass_number in range(TOTAL_NUMBER_PASSES):
                 break
             
     terminal("cd " + ROUTE_NN_MODEL + " && ./Allclean")
-print("Calculation is finished")
+end = time.time()
+print("Calculation is finished.")
+
+with open('./report.txt', 'a') as f:
+    f.write("Total calculation time: " + str(end-start) + " (s) \n or \n " + 
+            str((end-start)/3600) + "(h)")
+    f.close()
